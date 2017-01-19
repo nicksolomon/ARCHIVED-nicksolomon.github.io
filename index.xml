@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nick Solomon</title>
-    <link>http://www.nicksolmon.me/index.xml</link>
-    <description>Recent content on Nick Solomon</description>
-    <generator>Hugo -- gohugo.io</generator>
+      <title>Nick Solomon on Nick Solomon </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://www.nicksolmon.github.io/index.xml</link>
     <language>en-us</language>
+    
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 17 Jan 2017 16:03:55 -0800</lastBuildDate>
-    <atom:link href="http://www.nicksolmon.me/index.xml" rel="self" type="application/rss+xml" />
+    <updated>Tue, 17 Jan 2017 16:03:55 PST</updated>
     
     <item>
       <title>About</title>
-      <link>http://www.nicksolmon.me/pages/about/</link>
-      <pubDate>Tue, 17 Jan 2017 16:03:55 -0800</pubDate>
+      <link>https://www.nicksolmon.github.io/pages/about/</link>
+      <pubDate>Tue, 17 Jan 2017 16:03:55 PST</pubDate>
       
-      <guid>http://www.nicksolmon.me/pages/about/</guid>
+      <guid>https://www.nicksolmon.github.io/pages/about/</guid>
       <description>&lt;p&gt;I’m a senior undergrad doing math at a tiny liberal arts college in the Pacific Northwest.&lt;/p&gt;
 
 &lt;p&gt;I like statistics and R.&lt;/p&gt;
@@ -28,13 +27,13 @@
     
     <item>
       <title>Shiny apps</title>
-      <link>http://www.nicksolmon.me/pages/shiny/</link>
-      <pubDate>Tue, 17 Jan 2017 16:03:51 -0800</pubDate>
+      <link>https://www.nicksolmon.github.io/pages/shiny/</link>
+      <pubDate>Tue, 17 Jan 2017 16:03:51 PST</pubDate>
       
-      <guid>http://www.nicksolmon.me/pages/shiny/</guid>
+      <guid>https://www.nicksolmon.github.io/pages/shiny/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;&lt;img src=&#34;http://www.nicksolmon.me/images/philly_crime.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;&lt;img src=&#34;https://www.nicksolmon.github.io/images/philly_crime.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;crime-in-northwest-philadelphia-http-r-nicksolomon-me-shiny-nw-philly-crime&#34;&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;Crime in Northwest Philadelphia&lt;/a&gt;&lt;/h3&gt;
 
