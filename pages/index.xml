@@ -3,7 +3,7 @@
   <channel>
       <title>Pages on Nick Solomon </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>/pages/index.xml</link>
+    <link>http://www.nicksolomon.me/pages/index.xml</link>
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
@@ -11,10 +11,10 @@
     
     <item>
       <title>About</title>
-      <link>/pages/about/</link>
+      <link>http://www.nicksolomon.me/pages/about/</link>
       <pubDate>Tue, 17 Jan 2017 16:03:55 PST</pubDate>
       
-      <guid>/pages/about/</guid>
+      <guid>http://www.nicksolomon.me/pages/about/</guid>
       <description>&lt;p&gt;I’m a senior undergrad doing math at a tiny liberal arts college in the Pacific Northwest.&lt;/p&gt;
 
 &lt;p&gt;I like statistics and R.&lt;/p&gt;
@@ -27,13 +27,13 @@
     
     <item>
       <title>Shiny apps</title>
-      <link>/pages/shiny/</link>
+      <link>http://www.nicksolomon.me/pages/shiny/</link>
       <pubDate>Tue, 17 Jan 2017 16:03:51 PST</pubDate>
       
-      <guid>/pages/shiny/</guid>
+      <guid>http://www.nicksolomon.me/pages/shiny/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;&lt;img src=&#34;/images/philly_crime.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;&lt;img src=&#34;http://www.nicksolomon.me/images/philly_crime.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;crime-in-northwest-philadelphia-http-r-nicksolomon-me-shiny-nw-philly-crime&#34;&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;Crime in Northwest Philadelphia&lt;/a&gt;&lt;/h3&gt;
 
