@@ -3,18 +3,18 @@
   <channel>
       <title>Posts on Nick Solomon </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://www.nicksolmon.me/post/index.xml</link>
+    <link>/nicksolomon.github.io/post/index.xml</link>
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
     
     <item>
-      <title>test</title>
-      <link>http://www.nicksolmon.me/post/test2/</link>
+      <title>Test</title>
+      <link>/nicksolomon.github.io/post/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
       
-      <guid>http://www.nicksolmon.me/post/test2/</guid>
+      <guid>/nicksolomon.github.io/post/test/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -35,7 +35,7 @@
 &lt;div id=&#34;including-plots&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Including Plots&lt;/h2&gt;
 &lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.nicksolmon.me/post/test2/figures/pressure-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/nicksolomon.github.io/post/test/figures/pressure-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Note that the &lt;code&gt;echo = FALSE&lt;/code&gt; parameter was added to the code chunk to prevent printing of the R code that generated the plot.&lt;/p&gt;
 &lt;/div&gt;
 
