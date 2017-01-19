@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/nicksolomon.me/pages/about/</loc>
+    <loc>/pages/about/</loc>
     <lastmod>2017-01-17T16:03:55-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/nicksolomon.me/pages/shiny/</loc>
+    <loc>/pages/shiny/</loc>
     <lastmod>2017-01-17T16:03:51-08:00</lastmod>
   </url>
   
   <url>
-    <loc>/nicksolomon.me/</loc>
+    <loc>/</loc>
     <lastmod>2017-01-17T16:03:55-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/nicksolomon.me/pages/</loc>
+    <loc>/pages/</loc>
     <lastmod>2017-01-17T16:03:55-08:00</lastmod>
     <priority>0</priority>
   </url>
