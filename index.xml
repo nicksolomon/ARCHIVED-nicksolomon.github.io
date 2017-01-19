@@ -7,44 +7,12 @@
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <updated>Tue, 17 Jan 2017 16:03:55 PST</updated>
-    
-    <item>
-      <title>About</title>
-      <link>/nicksolomon.github.io/pages/about/</link>
-      <pubDate>Tue, 17 Jan 2017 16:03:55 PST</pubDate>
-      
-      <guid>/nicksolomon.github.io/pages/about/</guid>
-      <description>&lt;p&gt;I’m a senior undergrad doing math at a tiny liberal arts college in the Pacific Northwest.&lt;/p&gt;
-
-&lt;p&gt;I like statistics and R.&lt;/p&gt;
-
-&lt;p&gt;I’m writing a thesis about network models and disease transmission, see my blog for updates.&lt;/p&gt;
-
-&lt;p&gt;All the photos were taken by me with a Minolta X-370 in various places in Oregon, Washington, and Maine.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Shiny apps</title>
-      <link>/nicksolomon.github.io/pages/shiny/</link>
-      <pubDate>Tue, 17 Jan 2017 16:03:51 PST</pubDate>
-      
-      <guid>/nicksolomon.github.io/pages/shiny/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;&lt;img src=&#34;nicksolomon.github.io/images/philly_crime.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;crime-in-northwest-philadelphia-http-r-nicksolomon-me-shiny-nw-philly-crime&#34;&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;Crime in Northwest Philadelphia&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;An exploration of the locations of violent crime in northwest Philadelphia from 2006 to 2016.&lt;/p&gt;
-</description>
-    </item>
+    <updated>Thu, 19 Jan 2017 00:00:00 UTC</updated>
     
     <item>
       <title>Test</title>
       <link>/nicksolomon.github.io/post/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 UTC</pubDate>
       
       <guid>/nicksolomon.github.io/post/test/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
@@ -78,6 +46,38 @@
 
 
 /BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/nicksolomon.github.io/pages/about/</link>
+      <pubDate>Tue, 17 Jan 2017 16:03:55 PST</pubDate>
+      
+      <guid>/nicksolomon.github.io/pages/about/</guid>
+      <description>&lt;p&gt;I’m a senior undergrad doing math at a tiny liberal arts college in the Pacific Northwest.&lt;/p&gt;
+
+&lt;p&gt;I like statistics and R.&lt;/p&gt;
+
+&lt;p&gt;I’m writing a thesis about network models and disease transmission, see my blog for updates.&lt;/p&gt;
+
+&lt;p&gt;All the photos were taken by me with a Minolta X-370 in various places in Oregon, Washington, and Maine.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shiny apps</title>
+      <link>/nicksolomon.github.io/pages/shiny/</link>
+      <pubDate>Tue, 17 Jan 2017 16:03:51 PST</pubDate>
+      
+      <guid>/nicksolomon.github.io/pages/shiny/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;&lt;img src=&#34;nicksolomon.github.io/images/philly_crime.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;crime-in-northwest-philadelphia-http-r-nicksolomon-me-shiny-nw-philly-crime&#34;&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;Crime in Northwest Philadelphia&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;An exploration of the locations of violent crime in northwest Philadelphia from 2006 to 2016.&lt;/p&gt;
 </description>
     </item>
     
