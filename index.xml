@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Nick Solomon on Nick Solomon </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
+    <title>Nick Solomon</title>
     <link>http://www.nicksolmon.me/index.xml</link>
+    <description>Recent content on Nick Solomon</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <updated>Tue, 17 Jan 2017 16:03:55 PST</updated>
+    <lastBuildDate>Tue, 17 Jan 2017 16:03:55 -0800</lastBuildDate>
+    <atom:link href="http://www.nicksolmon.me/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>
       <link>http://www.nicksolmon.me/pages/about/</link>
-      <pubDate>Tue, 17 Jan 2017 16:03:55 PST</pubDate>
+      <pubDate>Tue, 17 Jan 2017 16:03:55 -0800</pubDate>
       
       <guid>http://www.nicksolmon.me/pages/about/</guid>
       <description>&lt;p&gt;I’m a senior undergrad doing math at a tiny liberal arts college in the Pacific Northwest.&lt;/p&gt;
@@ -28,7 +29,7 @@
     <item>
       <title>Shiny apps</title>
       <link>http://www.nicksolmon.me/pages/shiny/</link>
-      <pubDate>Tue, 17 Jan 2017 16:03:51 PST</pubDate>
+      <pubDate>Tue, 17 Jan 2017 16:03:51 -0800</pubDate>
       
       <guid>http://www.nicksolmon.me/pages/shiny/</guid>
       <description>
