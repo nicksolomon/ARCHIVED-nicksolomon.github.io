@@ -17,6 +17,8 @@
       <guid>http://www.nicksolomon.me/pages/lasp/</guid>
       <description>
 
+&lt;p&gt;For this project, I worked with &lt;a href=&#34;http://lasp.org&#34;&gt;Legal Aid of Southeastern PA&lt;/a&gt; to help them find patterns in the types of services they provide to different geographic areas in the four counties they serve. Here is an anonymized version of the interactive maps I produced for them. Points were jittered randomly by a small amount, so while exact locations are inaccurate, any overall trends should still be apparent.&lt;/p&gt;
+
 &lt;h3 id=&#34;bucks-county&#34;&gt;Bucks county&lt;/h3&gt;
 
 &lt;iframe src=&#39;http://www.nicksolomon.me/lasp_widgets/Bucks.html&#39; width=&#39;100%&#39; height = 600&gt;&lt;/iframe&gt;
