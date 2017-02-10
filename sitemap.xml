@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.nicksolomon.me/pages/lasp/</loc>
+    <lastmod>2017-02-07T21:51:44-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.nicksolomon.me/post/2017-01-23-networks-and-disease/</loc>
     <lastmod>2017-02-06T00:00:00+00:00</lastmod>
   </url>
@@ -12,19 +17,19 @@
   </url>
   
   <url>
-    <loc>http://www.nicksolomon.me/pages/shiny/</loc>
+    <loc>http://www.nicksolomon.me/pages/projects/</loc>
     <lastmod>2017-01-17T16:03:51-08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.nicksolomon.me/</loc>
-    <lastmod>2017-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-07T21:51:44-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.nicksolomon.me/pages/</loc>
-    <lastmod>2017-01-17T16:03:55-08:00</lastmod>
+    <lastmod>2017-02-07T21:51:44-08:00</lastmod>
     <priority>0</priority>
   </url>
   

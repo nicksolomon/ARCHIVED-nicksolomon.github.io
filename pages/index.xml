@@ -7,7 +7,33 @@
     <language>en-us</language>
     
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <updated>Tue, 17 Jan 2017 16:03:55 PST</updated>
+    <updated>Tue, 07 Feb 2017 21:51:44 PST</updated>
+    
+    <item>
+      <title>Cases handled by Legal Aid of Southeastern PA</title>
+      <link>http://www.nicksolomon.me/pages/lasp/</link>
+      <pubDate>Tue, 07 Feb 2017 21:51:44 PST</pubDate>
+      
+      <guid>http://www.nicksolomon.me/pages/lasp/</guid>
+      <description>
+
+&lt;h3 id=&#34;bucks-county&#34;&gt;Bucks county&lt;/h3&gt;
+
+&lt;iframe src=&#39;http://www.nicksolomon.me/lasp_widgets/Bucks.html&#39; width=&#39;100%&#39; height = 600&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;chester-county&#34;&gt;Chester county&lt;/h3&gt;
+
+&lt;iframe src=&#39;http://www.nicksolomon.me/lasp_widgets/Chester.html&#39; width=&#39;100%&#39; height = 600&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;delaware-county&#34;&gt;Delaware county&lt;/h3&gt;
+
+&lt;iframe src=&#39;http://www.nicksolomon.me/lasp_widgets/Delaware.html&#39; width=&#39;100%&#39; height = 600&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;montgomery-county&#34;&gt;Montgomery county&lt;/h3&gt;
+
+&lt;iframe src=&#39;http://www.nicksolomon.me/lasp_widgets/Montgomery.html&#39; width=&#39;100%&#39; height = 600&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -26,18 +52,24 @@
     </item>
     
     <item>
-      <title>Shiny apps</title>
-      <link>http://www.nicksolomon.me/pages/shiny/</link>
+      <title>Projects</title>
+      <link>http://www.nicksolomon.me/pages/projects/</link>
       <pubDate>Tue, 17 Jan 2017 16:03:51 PST</pubDate>
       
-      <guid>http://www.nicksolomon.me/pages/shiny/</guid>
+      <guid>http://www.nicksolomon.me/pages/projects/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;&lt;img src=&#34;http://www.nicksolomon.me/images/philly_crime.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;crime-in-northwest-philadelphia-http-r-nicksolomon-me-shiny-nw-philly-crime&#34;&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;Crime in Northwest Philadelphia&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;An exploration of the locations of violent crime in northwest Philadelphia from 2006 to 2016.&lt;/p&gt;
+&lt;p&gt;An exploration of the locations of violent crime in northwest Philadelphia from 2006 to 2016 using &lt;code&gt;shiny&lt;/code&gt; and &lt;code&gt;leaflet&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.nicksolomon.me/pages/lasp/&#34;&gt;&lt;img src=&#34;http://www.nicksolomon.me/images/lasp_widgets.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;mapping-legal-services-pages-lasp&#34;&gt;&lt;a href=&#34;http://www.nicksolomon.me/pages/lasp&#34;&gt;Mapping legal services&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Visualizations of the (anonymized) location of clients of Legal Aid of Southeastern PA and the type of representation they required, broken up by county.&lt;/p&gt;
 </description>
     </item>
     
