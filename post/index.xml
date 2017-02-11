@@ -60,7 +60,7 @@ ggraph(measles_net) +
   geom_edge_link(arrow = my_arrow) +
   geom_node_point(color = &amp;quot;red&amp;quot;) +
   theme_no_axes()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-01-23-networks-and-disease_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.nicksolomon.me/post/2017-01-23-networks-and-disease/figures/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Great! We’ve made a network that represents the spread of measles during the outbreak, but what does it tell us? Right now, not much. We can see who infected who, but without knowing more about the individual patients, we can’t really learn a lot about how the disease spread. Taking a second look at our data frame, it seems like there’s a few covariates that could be of interest. We’ll pull out &lt;code&gt;AGE&lt;/code&gt;, &lt;code&gt;SEX&lt;/code&gt;, and &lt;code&gt;CL&lt;/code&gt; (which class in school the child was in) and add them to our network as vertex attributes.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;vertex_attrs &amp;lt;- hagelloch.df %&amp;gt;% 
   select(AGE, SEX, CL) %&amp;gt;% 
@@ -74,11 +74,11 @@ plot_base = ggraph(measles_net) +
 &lt;pre&gt;&lt;code&gt;## Converting network object to igraph&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Using `nicely` as default layout&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_base + geom_node_point(aes(color = SEX), size = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-01-23-networks-and-disease_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.nicksolomon.me/post/2017-01-23-networks-and-disease/figures/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_base + geom_node_point(aes(color = AGE), size = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-01-23-networks-and-disease_files/figure-html/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.nicksolomon.me/post/2017-01-23-networks-and-disease/figures/unnamed-chunk-3-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_base + geom_node_point(aes(color = CL), size = 3)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####content/post/2017-01-23-networks-and-disease_files/figure-html/unnamed-chunk-3-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.nicksolomon.me/post/2017-01-23-networks-and-disease/figures/unnamed-chunk-3-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Starting with sex, we can see that there’s not much clustering of the colors. It looks like kids with measles weren’t more likely to spread the disease to others of the same sex. Age is more promising, however. We definitely see clumps of darker and lighter blues, indicating that children tended to infect other kids close to them in age. This pattern makes more sense when we look at the final plot. There’s definitely a strong clustering effect based on class in this network. Intuitively, this seems very plausible. Where do kids get sick? At school. Who infects them? Their classmates.&lt;/p&gt;
 &lt;p&gt;Looking at that final plot was informative, but this network has another dimension that a static plot can’t capture. The spread of disease occurs &lt;em&gt;over time&lt;/em&gt;. To visualize this, we need to make our network dynamic. Luckily, &lt;code&gt;statnet&lt;/code&gt; includes tools for this. We can use the &lt;code&gt;networkDynamic&lt;/code&gt; package that’s loaded when &lt;code&gt;statnet&lt;/code&gt; is. This package allows us to easily add vertex and edge attributes in the form of “spells,” which define when that vertex or edge is active in the network. Here, we activate the edge at the time it was infected.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;measles_net_dynamic &amp;lt;- measles_net # copy our network
