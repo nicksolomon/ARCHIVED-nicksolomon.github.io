@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Dependence in Exponential Random Graph Models</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Nick Solomon" />
+    <link rel="stylesheet" href="slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Local Dependence in Exponential Random Graph Models
+### Nick Solomon
+### May 4, 2016
+
+---
+
+class: center, middle, inverse
+
+
+
+## Random graphs
+
+---
+
+## What is a graph?
+
+&lt;img src="../writing/figure/png/small_net.png" width="25%" style="display: block; margin: auto;" /&gt;
+
+--
+
+- A pair of edges and vertices, `\(G = (E, V)\)`.
+--
+
+  - Edges are pairs of vertices: `\(e = (i, j)\)` for `\(i, j \in V\)`
+--
+
+- Can be represented as an adjacency matrix:
+\begin{bmatrix}
+0 &amp; 1 &amp; 0 &amp; 1 \\\
+1 &amp; 0 &amp; 0 &amp; 1 \\\
+0 &amp; 0 &amp; 0 &amp; 1 \\\
+1 &amp; 1 &amp; 1 &amp; 0
+\end{bmatrix}
+---
+
+## Random graphs
+--
+
+- Consider the graph as an adjacency matrix where each entry is a random variable
+--
+
+- Add vertex attributes
+---
+class: center, middle, inverse
+
+## Exponential random graph models (ERGMs)
+
+---
+## ERGMs
+
+- A broad class of flexible models for random graphs.
+--
+
+- Model network features selected by the researcher
+--
+
+- Has the form
+
+$$
+P(Y = y) = \frac{e^{g(y) \cdot \theta}}{C(\mathcal{Y}, \theta)}
+$$
+
+.center[where]
+
+$$
+C(\mathcal{Y}, \theta) = \sum_{y \in \mathcal{Y}} e^{g(y) \cdot \theta}.
+$$
+
+---
+
+## Estimating `\(\theta\)`
+
+--
+
+- Difficult because of intractable normalizing constant 
+--
+
+- Maximum pseudolikelihood estimation (MPLE)
+--
+
+  - Simplifying assumption of dyad independence
+--
+
+  - Reduces the problem to logistic regression
+--
+
+- Markov chain Monte Carlo maximum likelihood estimation (MCMC-MLE)
+--
+
+  - Approximates a log ratio of normalizing constants
+--
+
+  - Generate a Markov chain converging to the distribution implied by `\(\theta_0\)`
+  (typically the MPLE)
+--
+
+- The exchange algorithm
+--
+
+  - Augment the posterior with auxiliary variables to remove intractable constants
+---
+
+## Examples
+
+&lt;img src="slides_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## MCMC-MLE Example
+
+
+
+
+```r
+flo_model &lt;- ergm::ergm(flomarriage ~ edges() + 
+                    triangle() + 
+                    absdiff("wealth"))
+```
+--
+
+
+```
+##             term    estimate   std.error mcmc.error      p.value
+## 1          edges -2.28695169 0.444076723          0 1.066510e-06
+## 2       triangle -0.04072580 0.584470681          0 9.445675e-01
+## 3 absdiff.wealth  0.01547557 0.006399998          0 1.714603e-02
+```
+---
+## Bayesian Example
+
+
+```r
+flo_model_bayes &lt;- Bergm::bergm(flomarriage ~ edges() + 
+                    triangle() + 
+                    absdiff("wealth"))
+```
+--
+
+
+```
+##             term posterior mean posterior s.d.
+## 1          edges    -2.43551159    0.328410128
+## 2       triangle     0.08362869    0.342538630
+## 3 absdiff.wealth     0.01647489    0.005491517
+```
+
+&lt;img src="slides_files/figure-html/unnamed-chunk-7-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+class: center, middle, inverse
+
+## Random Networks
+---
+
+## Exponential random network models (ERNMs)
+--
+
+- A useful variation on random graphs with fixed vertex attributes
+--
+
+- Vertex attributes are random variables
+--
+
+- Let `\(Y\)` be the graph and `\(X\)` the matrix of vertex attributes
+--
+
+- A similar exponential form
+$$
+P(Y = y, X \in x| \eta) \propto e^{\eta \cdot g(y, x)}
+$$
+--
+
+- With a similarly nasty normalizing constant
+---
+class: middle, center, inverse
+
+## The good stuff
+---
+
+## Two theorems
+--
+
+1. Locally dependent sparse exponential random network models have strongly
+consistent maximum likelihood estimates
+--
+
+2. Locally dependent sparse exponential random network models have asymptotically
+normal statistics
+--
+ (most of the time)
+
+---
+## Local dependence
+
+- A random network model satisfies the *local dependence property* if there is a partition of the node set `\(\mathcal{N}\)` into neighborhoods `\(A_1, A_2, \dots, A_K\)` for `\(K \geq 2\)` such that the network variables `\(Z_{ij}\)` are dependent when `\(i, j \in A_{\ell}\)` for some `\(\ell\)` and independent otherwise. We also require that nodal attributes depend only on the attributes of nodes within the same neighborhood.
+--
+
+- Then we can write the probability measure as
+`$$P(Z \in \mathbf{Z}) = \prod_{k = 1}^{K}\left[ P_{kk}(Z_{kk} \in \mathbf{Z}_{kk}) \prod_{\ell = 1}^{k-1} P_{kl}(Z_{kl} \in \mathbf{Z}_{kl}, Z_{lk} \in \mathbf{Z}_{lk}) \right],$$`
+where `\(Z_{mn}\)` is the subnetwork consisting of the random graph ties from nodes in `\(A_m\)` to those in `\(A_n\)` and the appropriate node variables and `\(\mathbf{Z}_{mn}\)` is a subset of the sample space of `\(Z_{mn}\)`
+--
+
+- The measures `\(P_{kk}\)` can induce dependence between dyads while the measures `\(P_{kl}\)` induce independence
+---
+
+## Local dependence (cont'd)
+--
+
+- Only your friends matter
+---
+
+## Sparsity
+
+- There is some `\(\delta &gt; 0\)` and some `\(C &gt; 0\)` such that
+`$$\mathbb{E}\left( \left| Y_{Bij} \right|^{p} \right) \leq Cn^{-\delta}, \qquad (p = 1, 2)$$`
+where `\(n = |\mathcal{N}|\)` and `\(Y_{Bij}\)` signifies the tie between neighborhoods from node `\(i \in A_{l}\)` to node `\(j \in A_{m}\)` where `\(l \neq m\)`
+--
+
+- Most of your friends are in your neighborhood
+---
+
+## Existence and consistency of MLEs
+--
+
+- We can recover the distribution of a subnetwork from the larger network
+--
+
+- Therefore, we have a projective exponential family, and the result follows&lt;sup&gt;1&lt;/sup&gt;
+
+.footnote[1. Shalizi &amp; Rinaldo, 2013]
+---
+
+## Asymptotic normality of statistics
+--
+
+- Most statistics are in one of three classes:
+--
+
+  1. Depend only on the graph, `\(Y\)`
+--
+
+  2. Depend on both the graph and the vertex attributes
+--
+
+  3. Depend only on the vertex attributes, `\(X\)`
+--
+
+- There are further technical conditions on the form of the statistics
+---
+
+## Classes 1 &amp; 2
+--
+
+- Split the statistic into within and between neighborhood portions
+--
+
+- Bound the variance of the between neighborhood portion
+--
+  
+  - Becomes asymptotically negligible
+--
+
+- Bound the variance of the within neighborhood portion
+--
+
+- Show Lyapounov's condition holds
+--
+
+- The result follow from the Lindeberg-Feller CLT and Slutsky's Theorem
+---
+
+## Class 3
+--
+
+- The vertex attributes form an `\(M\)`-dependent sequence of random variables
+--
+
+- The result follows from a central limit theorem for dependent variables&lt;sup&gt;1&lt;/sup&gt;
+
+.footnote[1. Billingsley, 1995]
+---
+class: center, middle, inverse
+
+## Simulations
+---
+
+## A simulated network
+
+
+
+
+
+&lt;img src="slides_files/figure-html/unnamed-chunk-10-1.png" style="display: block; margin: auto;" /&gt;
+---
+
+## Many simulated networks
+
+
+
+&lt;img src="slides_files/figure-html/unnamed-chunk-12-1.png" style="display: block; margin: auto;" /&gt;
+---
+
+## Many simulated networks
+
+&lt;img src="slides_files/figure-html/unnamed-chunk-13-1.png" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Finding standard errors
+--
+
+- Jackknife at the neighborhood level
+--
+
+
+
+.center[
+
+|Statistic   | Simulated standard error| Jackknife standard error|
+|:-----------|------------------------:|------------------------:|
+|% Attribute |                0.0626989|                0.0650786|
+|Mean degree |                1.2052704|                1.9621269|
+|% Hom. ties |                0.0263713|                0.0351502|
+]
+
+---
+## Further research
+--
+
+- Software for fitting models
+--
+
+- Standard error estimates
+--
+
+- Multivariate extension of CLT for `\(M\)`-dependent random variables
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"self_contained": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {window.dispatchEvent(new Event('resize'));});</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
