@@ -43,11 +43,11 @@
       <pubDate>Tue, 17 Jan 2017 16:03:55 PST</pubDate>
       
       <guid>http://www.nicksolomon.me/pages/about/</guid>
-      <description>&lt;p&gt;I’m a senior undergrad doing math at a tiny liberal arts college in the Pacific Northwest.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m working on course development with DataCamp&lt;/p&gt;
 
 &lt;p&gt;I like statistics, R, and Python.&lt;/p&gt;
 
-&lt;p&gt;I’m writing a thesis about network models and disease transmission, see my blog for updates.&lt;/p&gt;
+&lt;p&gt;I wrote a thesis about &lt;a href=&#34;http://www.nicksolomon.me/thesis&#34;&gt;asymptotic properties of network models.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;All the photos were taken by me with a Minolta X-370 in various places in Oregon, Washington, and Maine.&lt;/p&gt;
 </description>
@@ -60,6 +60,12 @@
       
       <guid>http://www.nicksolomon.me/pages/projects/</guid>
       <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.nicksolomon.me/thesis&#34;&gt;&lt;img src=&#34;http://www.nicksolomon.me/thesis/thesis_files/figure-html/example-net-1.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;local-dependence-in-exponential-random-network-models-thesis&#34;&gt;&lt;a href=&#34;http://www.nicksolomon.me/thesis&#34;&gt;Local Dependence in Exponential Random Network Models&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;For my undergraduate thesis project at Reed College, I worked with random graph models used in social network analysis. I extended results about the existence and consistency of MLEs and the asymptotic distribution of statistics to a new class of model.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://r.nicksolomon.me/shiny/nw_philly_crime/&#34;&gt;&lt;img src=&#34;http://www.nicksolomon.me/images/philly_crime.jpg&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
